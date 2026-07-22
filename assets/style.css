@@ -31,7 +31,6 @@ body {
 }
 .page-shell { width: min(1500px, calc(100% - 28px)); margin: 14px auto; border: 1px solid var(--line); background: rgba(23, 23, 19, .72); }
 .site-header, .site-footer { display: grid; grid-template-columns: 1.1fr 1fr 1fr; align-items: center; min-height: 68px; padding: 0 28px; border-bottom: 1px solid var(--line); font-family: var(--mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; }
-.site-header { position: relative; }
 .site-mark { display: inline-flex; gap: 9px; align-items: center; color: var(--ink); text-decoration: none; font-family: var(--serif); font-size: 18px; letter-spacing: 0; text-transform: none; }
 .mark-glyph { color: var(--moss); font-size: 20px; }
 nav { display: flex; justify-content: center; gap: 24px; }
@@ -39,20 +38,6 @@ nav a, .back-link { color: var(--muted); text-decoration: none; }
 nav a:hover, .back-link:hover { color: var(--ink); }
 .header-status { justify-self: end; color: var(--muted); }
 .header-status span { width: 7px; height: 7px; display: inline-block; border-radius: 100%; background: var(--moss); margin-right: 7px; }
-.mobile-menu { display: none; }
-@media (hover: none) and (pointer: coarse) {
-  .site-header { grid-template-columns: 1fr auto; }
-  .site-header > nav, .header-status { display: none; }
-  .mobile-menu { display: block; justify-self: end; position: relative; }
-  .mobile-menu summary { list-style: none; cursor: pointer; padding: 8px 10px; border: 1px solid var(--line); color: var(--ink); }
-  .mobile-menu summary::-webkit-details-marker { display: none; }
-  .mobile-menu summary span { color: var(--moss); margin-left: 8px; }
-  .mobile-menu[open] summary { border-color: var(--moss); }
-  .mobile-menu-panel { position: absolute; z-index: 5; right: 0; top: calc(100% + 7px); width: 190px; display: block; padding: 8px 0; border: 1px solid var(--line); background: #191915; box-shadow: 8px 8px 0 rgba(0,0,0,.26); }
-  .mobile-menu-panel a { display: flex; gap: 12px; padding: 12px 14px; color: var(--ink); text-decoration: none; }
-  .mobile-menu-panel a:hover { color: var(--moss); background: rgba(232,223,207,.04); }
-  .mobile-menu-panel span { color: var(--seal); }
-}
 .hero { min-height: 390px; padding: 42px 34px 26px; border-bottom: 1px solid var(--line); position: relative; display: grid; grid-template-columns: 1.35fr .65fr; align-content: space-between; }
 .eyebrow { color: var(--moss); font: 11px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; margin: 0 0 16px; }
 h1, h2, h3, p { margin-top: 0; }

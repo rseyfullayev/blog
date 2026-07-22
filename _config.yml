@@ -1,0 +1,23 @@
+title: Marginalia
+description: Notes on books, systems, places, and whatever else stays with me.
+url: "https://rseyfullayev.github.io"
+baseurl: "/blog"
+permalink: /notes/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+exclude:
+  - app
+  - build
+  - db
+  - drizzle
+  - examples
+  - node_modules
+  - tests
+  - worker
+  - work
+  - package.json
+  - package-lock.json
+  - vite.config.ts
+  - tsconfig.json
+  - next.config.ts

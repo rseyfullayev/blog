@@ -1,0 +1,72 @@
+---
+layout: default
+---
+<section class="hero">
+  <p class="eyebrow">Private library · public notes</p>
+  <h1>A place for<br><em>what remains.</em></h1>
+  <div class="hero-note">
+    <p>Thoughts on books, ideas, places, and the small connections between them.</p>
+    <p class="catalogue-no">Archive no. 01<br>Est. 2026</p>
+  </div>
+</section>
+
+<section class="ledger" aria-label="Site index">
+  <p><span>01</span> Notes &amp; essays</p>
+  <p><span>02</span> Reading shelf</p>
+  <p><span>03</span> Fragments &amp; correspondence</p>
+</section>
+
+<section class="notes-section" id="notes">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">01 · Recent writing</p>
+      <h2>Notes from the margin</h2>
+    </div>
+    <p>Written in Markdown,<br>kept in plain sight.</p>
+  </div>
+  <div class="post-list">
+    {% for post in site.posts %}
+      <a class="post-row" href="{{ post.url | relative_url }}">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d.%m.%y" }}</time>
+        <span class="post-title">{{ post.title }}</span>
+        <span class="post-category">{{ post.category | default: "Note" }}</span>
+        <span class="arrow">↗</span>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="books-section" id="books">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">02 · The shelf</p>
+      <h2>Books in company</h2>
+    </div>
+    <p>Hover a book<br>for a margin note.</p>
+  </div>
+  <div class="shelf" aria-label="Book shelf">
+    {% for book in site.data.books %}
+      <article class="book-card">
+        <div class="book-cover{% unless book.cover == '' %} has-image{% endunless %}"{% unless book.cover == '' %} style="background-image: url('{{ book.cover | relative_url }}')"{% endunless %}>
+          {% if book.cover == '' %}
+            <span class="cover-ornament">✣</span>
+            <strong>{{ book.title }}</strong>
+            <small>{{ book.author }}</small>
+          {% endif %}
+        </div>
+        <div class="book-copy">
+          <p class="book-status">{{ book.status }}</p>
+          <h3>{{ book.title }}</h3>
+          <p class="book-author">{{ book.author }}</p>
+          <p class="book-note">{{ book.note }}</p>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="closing-note">
+  <p class="eyebrow">A small rule</p>
+  <blockquote>“Study nature, not as a part, but as a whole.”</blockquote>
+  <cite>— Alexander von Humboldt, 1831</cite>
+</section>

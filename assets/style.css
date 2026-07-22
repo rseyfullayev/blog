@@ -40,7 +40,7 @@ nav a:hover, .back-link:hover { color: var(--ink); }
 .header-status { justify-self: end; color: var(--muted); }
 .header-status span { width: 7px; height: 7px; display: inline-block; border-radius: 100%; background: var(--moss); margin-right: 7px; }
 .mobile-menu { display: none; }
-@media (max-width: 900px) {
+@media (hover: none) and (pointer: coarse) {
   .site-header { grid-template-columns: 1fr auto; }
   .site-header > nav, .header-status { display: none; }
   .mobile-menu { display: block; justify-self: end; position: relative; }

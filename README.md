@@ -1,4 +1,4 @@
-# Marginalia
+# Notes
 
 A dark, structured personal blog built for GitHub Pages and Jekyll. Posts are ordinary Markdown files; the reading shelf is managed in one small data file.
 

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Marginalia",
+  title: "Notes",
   description: "Notes on books, systems, places, and whatever else stays with me.",
   icons: {
     icon: "/favicon.svg",

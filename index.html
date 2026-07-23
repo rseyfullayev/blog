@@ -2,27 +2,17 @@
 layout: default
 ---
 <section class="hero">
-  <p class="eyebrow">Private library · public notes</p>
   <h1>notes from<br><em>underground</em></h1>
   <div class="hero-note">
-    <p>philosophy, science, psychology, mathematics, physics, religion, maybe? </p>
-    <p class="catalogue-no">Archive no. 01<br>Est. 2026</p>
+    <p>philosophy, science, psychology, mathematics, physics, religion, maybe?</p>
   </div>
-</section>
-
-<section class="ledger" aria-label="Site index">
-  <p><span>01</span> Notes &amp; essays</p>
-  <p><span>02</span> Reading shelf</p>
-  <p><span>03</span> Fragments &amp; correspondence</p>
 </section>
 
 <section class="notes-section" id="notes">
   <div class="section-heading">
     <div>
-      <p class="eyebrow">01 · Recent writing</p>
-      <h2>essays & readings</h2>
+      <h2>Writing</h2>
     </div>
-    <p>Written in Markdown,<br>kept in plain sight.</p>
   </div>
   <div class="post-list">
     {% for post in site.posts %}
@@ -39,10 +29,8 @@ layout: default
 <section class="books-section" id="books">
   <div class="section-heading">
     <div>
-      <p class="eyebrow">02 · The shelf</p>
-      <h2>books & sources</h2>
+      <h2>Books</h2>
     </div>
-    <p>hover a book<br>for a margin note.</p>
   </div>
   <div class="shelf" aria-label="Book shelf">
     {% for book in site.data.books %}
@@ -63,10 +51,4 @@ layout: default
       </article>
     {% endfor %}
   </div>
-</section>
-
-<section class="closing-note">
-  <p class="eyebrow">A small rule</p>
-  <blockquote>“Study nature, not as a part, but as a whole.”</blockquote>
-  <cite>— Alexander von Humboldt, 1831</cite>
 </section>

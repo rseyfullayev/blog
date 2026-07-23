@@ -15,3 +15,33 @@
   status: "To return to"
   note: ""
   cover: ""
+
+- title: "The Alchemist"
+  author: "Paulo Coelho"
+  status: "Done"
+  note: ""
+  cover: ""
+
+- title: "Thinking, Fast and Slow"
+  author: "Daniel Kahneman"
+  status: "Done"
+  note: ""
+  cover: ""
+
+- title: "The Happiness Hypothesis"
+  author: "Jonathan Haidt"
+  status: "Done"
+  note: ""
+  cover: ""
+
+- title: "The Subtle Art of Not Giving a F*ck"
+  author: "Mark Manson"
+  status: "Done"
+  note: ""
+  cover: ""
+
+- title: "Deep Work"
+  author: "Cal Newport"
+  status: "Done"
+  note: ""
+  cover: ""

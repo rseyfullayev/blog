@@ -2,7 +2,7 @@
   author: "Carl Gustav Jung"
   status: "Reading"
   note: "A companion for unfinished thoughts."
-  cover: "./archetypes_and_unconscious.jpg"
+  cover: "/assets/archetypes_and_unconscious.jpg"
 
 - title: "The Rings of Saturn"
   author: "W. G. Sebald"

@@ -42,7 +42,7 @@ nav a:hover, .back-link:hover { color: var(--text); }
 
 .shelf { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .book-card { min-width: 0; }
-.book-cover { height: 255px; padding: 24px 18px; border: 1px solid var(--line); background: var(--surface); color: var(--text); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background-size: cover; background-position: center; }
+.book-cover { aspect-ratio: 2 / 3; padding: 24px 18px; border: 1px solid var(--line); background: var(--surface); color: var(--text); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background-size: cover; background-position: center; }
 .book-card:nth-child(2) .book-cover { background-color: #20251b; }
 .book-card:nth-child(3) .book-cover { background-color: #271d1b; }
 .book-cover.has-image { color: transparent; }
@@ -81,8 +81,8 @@ nav a:hover, .back-link:hover { color: var(--text); }
   .section-heading h2 { font-size: 32px; }
   .post-row { grid-template-columns: 70px 1fr 18px; gap: 8px; }
   .post-title { font-size: 19px; }
-  .shelf { grid-template-columns: 1fr; gap: 32px; }
-  .book-cover { height: 330px; }
+  .shelf { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 16px; }
+  .book-cover { padding: 18px 12px; }
   .essay { padding: 46px 0 64px; }
   .prose { font-size: 19px; }
   .site-footer span:last-child { display: none; }

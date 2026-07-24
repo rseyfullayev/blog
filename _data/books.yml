@@ -3,19 +3,7 @@
   status: "Reading"
   note: ""
   cover: "/assets/archetypes_and_unconscious.jpg"
-
-- title: "The Rings of Saturn"
-  author: "W. G. Sebald"
-  status: "Kept nearby"
-  note: ""
-  cover: ""
-
-- title: ""
-  author: "Thomas Mann"
-  status: "To return to"
-  note: ""
-  cover: ""
-
+  
 - title: "The Alchemist"
   author: "Paulo Coelho"
   status: "Done"
@@ -38,7 +26,7 @@
   author: "Mark Manson"
   status: "Done"
   note: ""
-  cover: "/assets/suble_art.jpg"
+  cover: "/assets/subtle_art.jpg"
 
 - title: "Deep Work"
   author: "Cal Newport"

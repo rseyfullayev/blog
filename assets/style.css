@@ -1,6 +1,6 @@
 :root {
   --background: #151512;
-  --surface: #1c1b17;
+  --surface: #202020;
   --text: #eee7da;
   --muted: #aaa195;
   --line: rgba(238, 231, 218, 0.18);
@@ -43,8 +43,8 @@ nav a:hover, .back-link:hover { color: var(--text); }
 .shelf { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .book-card { min-width: 0; }
 .book-cover { aspect-ratio: 2 / 3; padding: 24px 18px; border: 1px solid var(--line); background: var(--surface); color: var(--text); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background-size: cover; background-position: center; }
-.book-card:nth-child(2) .book-cover { background-color: #20251b; }
-.book-card:nth-child(3) .book-cover { background-color: #271d1b; }
+.book-card:nth-child(2) .book-cover { background-color: #242424; }
+.book-card:nth-child(3) .book-cover { background-color: #1d1d1d; }
 .book-cover.has-image { color: transparent; }
 .cover-ornament { margin-bottom: 18px; color: var(--accent); font-size: 22px; }
 .book-cover strong { font-size: 24px; font-weight: normal; line-height: 1; }
